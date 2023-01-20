@@ -5,9 +5,15 @@ spring:
   application:
     name: config-service
 
+  profiles:
+    active: navtive
+
   cloud:
     config:
       server:
+        ## How to convert git repository to Native local repository
+        # nativce.search-locations: file://${user.home}/Documents/local/git-local-repo
+
         git:
           uri: file:///Users/ing9990/Documents/local/git-local-repo
 
