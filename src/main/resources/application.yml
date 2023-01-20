@@ -10,3 +10,9 @@ spring:
       server:
         git:
           uri: file:///Users/ing9990/Documents/local/git-local-repo
+
+          ## How to convert protocol file:// to https:// ?
+          # uri: https://github.com/ing9990/spring-cloud-config
+          ## private option ##
+          # username: [your username]
+          # password: [your password]
