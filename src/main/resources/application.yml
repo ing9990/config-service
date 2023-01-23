@@ -28,3 +28,9 @@ spring:
           ## private option ##
           # username: [your username]
           # password: [your password]
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
