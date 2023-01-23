@@ -8,26 +8,21 @@ spring:
   rabbitmq:
     host: 127.0.0.1
     port: 5672
-    username: quest
-    password: quest
+    username: guest
+    password: guest
 
   profiles:
-    active: navtive
+    active: native
 
   cloud:
     config:
       server:
-        ## How to convert git repository to Native local repository
-        # nativce.search-locations: file://${user.home}/Documents/local/git-local-repo
-
+        native:
+          # user.home=/Users/ing9990
+          search-locations: file://${user.home}/Documents/local/native-file-repo
         git:
-          uri: file:///Users/ing9990/Documents/local/git-local-repo
-
-          ## How to convert protocol file:// to https:// ?
-          # uri: https://github.com/ing9990/spring-cloud-config
-          ## private option ##
-          # username: [your username]
-          # password: [your password]
+          default-label: master
+          uri: https://github.com/ing9990/spring-cloud-config-files
 
 management:
   endpoints:
