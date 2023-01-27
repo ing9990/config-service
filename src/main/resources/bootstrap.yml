@@ -1,0 +1,3 @@
+encrypt:
+  # 대칭키에 사용되는 Key
+  key: abcdefghijklmnopqrstuvwxyz0123456789
