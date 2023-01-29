@@ -28,4 +28,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, busrefresh
+        include: health, beans, busrefresh
